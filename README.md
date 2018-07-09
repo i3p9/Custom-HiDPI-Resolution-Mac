@@ -2,7 +2,8 @@
 
 Root PLIST File is a Sample Template for VX2260
 
-###Step 1
+##Step 1
+
 `ioreg -lw0 | grep IODisplayPrefsKey`
 
 Output will be like this: 
@@ -18,7 +19,7 @@ Then, convert `DisplayVendorId `and `DisplayProductID` to decimal (They are in h
 
 `DisplayProductName ` can be anything you want. 
 
-###Step 2
+##Step 2
 
 Resolutions! In the plist file, you have to change the `scale-resolutions` entries. For each scaled resolution there'll be two entries. The first one will be the 2x scaled res. And the second one will be the effective res.
 
@@ -45,6 +46,6 @@ Don't use this exact same line, change the VendorID and ProductID accordingly fr
 
 Restart and change to your custom resolution. [RDM](https://github.com/avibrazil/RDM) works well for this. This is a lightning icon for HiDPI Resolutions. 
 
-###Ending notes
+##Ending notes
 
 > Always make sure you're putting proper resolutions because the plist file takes it literally. Don't blame me if you've done goofed. 
