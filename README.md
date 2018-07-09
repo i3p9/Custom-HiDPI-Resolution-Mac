@@ -1,0 +1,1 @@
+# Custom-HiDPI-Resolution-Mac
